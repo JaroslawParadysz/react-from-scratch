@@ -187,7 +187,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	
 13. Create SCSS file in src/styles.scss
 ```scss
-	.app-wraper {
+	.app-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
