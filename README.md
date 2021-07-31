@@ -9,7 +9,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 
 2. Create public director
 
-3. Create index.html file
+3. Create index.html file in public directory
 ```html
     <html>
     <head>
@@ -110,7 +110,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	npm install --save-dev style-loader
 ```
 	
-11. Create webpack.config.ts
+11. Create webpack.config.ts in root directory
 ```typescript
 	import path from "path";
 	import { Configuration as WebpackConfiguration, DefinePlugin } from "webpack";
@@ -194,7 +194,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	}
 ```
 	
-14. Create .eslintrc
+14. Create .eslintrc file in root directory
 ```json
 {
     "parser": "@typescript-eslint/parser",
@@ -244,4 +244,9 @@ React 17, TypeScript + ESLint, WebPack+SCSS
     "build": "webpack --mode=production --env production --progress",
     "lint": "eslint src/**/*.{ts,tsx} --quiet --fix"
   }
+```
+
+16. Start app
+```
+    npm start
 ```
