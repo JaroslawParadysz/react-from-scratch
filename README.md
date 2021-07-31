@@ -7,15 +7,30 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	npm init -y
 ```
 
-2. Install React and TypeScript
+2. Create public director
+
+3. Create index.html file
+```html
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>React</title>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    </html>
+```
+
+4. Install React and TypeScript
 ```
 	npm install react react-dom
 	npm install --save-dev @types/react @types/react-dom typescript
 ```
 
-3. Create src directory
+5. Create src directory
 
-4. Create index.tsx in src
+6. Create index.tsx in src
 ```typescript
 		import React from "react";
 		import ReactDOM from "react-dom";
@@ -29,7 +44,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 		);
 ```
 		
-5. Create App component in src
+7. Create App component in src
 ```typescript
 		import React from "react";
 		import './styles.scss';
@@ -45,7 +60,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 ```
 		
 		
-6. Create tsconfig.json file in root directory
+8. Create tsconfig.json file in root directory
 ```json
 		{
 		  "compilerOptions": {
@@ -78,13 +93,13 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 		}
 ```		
 		
-7. Install eslint
+9. Install eslint
 ```
 	npm install --save-dev eslint  eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks  @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 
-8. Install WebPack
+10. Install WebPack
 ```
 	npm install --save-dev webpack webpack-cli webpack-dev-server ts-node @types/node @types/webpack @types/webpack-dev-server tsconfig-paths-webpack-plugin
 	npm install --save-dev @types/webpack-dev-server
@@ -95,7 +110,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	npm install --save-dev style-loader
 ```
 	
-9. Create webpack.config.ts
+11. Create webpack.config.ts
 ```typescript
 	import path from "path";
 	import { Configuration as WebpackConfiguration, DefinePlugin } from "webpack";
@@ -164,13 +179,13 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	export default webpackConfig;
 ```
 	
-10. Install node-sass
+12. Install node-sass
 ```
 	npm install add node-sass
 ```
 	
 	
-11. Create SCSS file in src/styles.scss
+13. Create SCSS file in src/styles.scss
 ```scss
 	.app-wraper {
 		display: flex;
@@ -179,7 +194,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	}
 ```
 	
-12. Create .eslintrc
+14. Create .eslintrc
 ```json
 {
     "parser": "@typescript-eslint/parser",
@@ -222,7 +237,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 ```
 
 
-13. Add scripts to package.json
+15. Add scripts to package.json
 ```json
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development --open --hot",
