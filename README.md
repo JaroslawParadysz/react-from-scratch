@@ -136,6 +136,7 @@ React 17, TypeScript + ESLint, WebPack+SCSS
 	  output: {
 		path: path.join(__dirname, "/build"),
 		filename: "build.js",
+		publicPath: '/'
 	  },
 	  module: {
 		rules: [
